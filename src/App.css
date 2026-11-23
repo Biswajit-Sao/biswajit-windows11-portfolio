@@ -1,0 +1,135 @@
+﻿.desktop{height:100vh;height:100dvh;min-height:250px;position:relative;overflow:hidden;background:#04254a url('/windows-10.jpg') center center/cover no-repeat}
+.desktop-space{position:absolute;inset:0 0 48px}
+.shortcuts{position:absolute;top:17px;left:9px;bottom:12px;display:flex;flex-flow:column wrap;align-content:flex-start;gap:4px}
+.shortcut{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;width:86px;height:81px;border:1px solid transparent;text-align:center;text-shadow:0 1px 4px #000;font-size:13px;line-height:1.15;font-weight:450}
+.shortcut:hover,.shortcut:focus-visible{background:#8ecfff25;border-color:#9bd2ff55}
+.shortcut .app-icon{width:43px;height:43px;object-fit:contain;filter:drop-shadow(0 2px 2px #00121f66)}
+.desktop-clock{position:absolute;top:4.1%;right:3.6%;text-align:right;text-shadow:0 2px 10px #001e3299;user-select:none}
+.desktop-clock>div{font-weight:250;letter-spacing:-2.6px;font-size:clamp(40px,4.1vw,68px);line-height:1.1}
+.desktop-clock small{font-size:14px;letter-spacing:1px;font-weight:500;margin-left:7px}
+.desktop-clock>span{font-size:14px;letter-spacing:.7px;color:#e0f1ff}
+.desktop-window{position:absolute;top:51%;left:46.5%;transform:translate(-50%,-50%);width:min(830px,calc(100vw - 240px));height:min(520px,calc(100% - 100px));background:#131a23;border:1px solid #526070;border-radius:5px;box-shadow:0 22px 80px #0008,0 3px 12px #0006;display:flex;flex-direction:column;overflow:hidden}
+.utility-window{left:52%;top:53%;width:min(710px,calc(100vw - 220px));height:min(475px,calc(100% - 85px))}
+.desktop-window.maximized{inset:0;transform:none;width:100%;height:100%;border-radius:0}
+.titlebar{background:#1e2733;height:38px;display:flex;align-items:center;justify-content:space-between;flex:none;user-select:none;touch-action:none;border-bottom:1px solid #35404c}
+.window-title{display:flex;align-items:center;gap:9px;font-size:13px;letter-spacing:.15px;padding-left:13px}
+.window-title .app-icon,.window-title .terminal-icon{width:17px;height:17px}
+.terminal-icon{display:inline-grid;place-items:center;background:linear-gradient(145deg,#28adff,#1269cc);border:1px solid #62beff;border-radius:3px;color:white;box-shadow:inset 0 0 0 1px #ffffff0d}
+.terminal-icon svg{width:82%;height:82%;stroke-width:2}
+.window-controls{display:flex;align-self:stretch}
+.window-controls button{width:43px;display:grid;place-items:center}
+.window-controls svg{width:13px;height:13px;stroke-width:1.6}
+.window-controls button:hover,.viewer-tools button:hover,.calendar button:hover{background:#ffffff18}
+.window-controls .close:hover{background:#c52d35}
+.window-body{display:flex;flex:1;flex-direction:column;min-height:0}
+.tabs{display:flex;flex:none;gap:6px;padding:0 22px;background:#18202a;border-bottom:1px solid #2d3846}
+.tabs button{display:flex;align-items:center;gap:8px;height:45px;padding:0 11px;position:relative;color:#adb7c5;font-size:13px}
+.tabs button:hover{background:#ffffff08;color:white}
+.tabs .selected{color:#73c4ff}
+.tabs .selected:after{position:absolute;bottom:-1px;left:9px;right:9px;content:'';height:2px;background:#42a8ff}
+.window-scroll{min-height:0;overflow:auto;flex:1}
+.overview{min-height:100%;display:flex;flex-direction:column;justify-content:center;padding:25px 35px 22px;background:radial-gradient(ellipse at 95% 0%,#20304688,transparent 65%)}
+.intro{display:grid;grid-template-columns:minmax(0,1fr) 30%;gap:34px;align-items:center}
+.greeting,.mono,.photo-caption,.statusbar,.quick-heading h2{font-family:Consolas,"Courier New",monospace}
+.greeting{display:flex;align-items:center;gap:9px;font-size:11px;line-height:1.4;letter-spacing:1.8px;font-weight:600;color:#70c4ff}
+.greeting span{height:2px;width:22px;background:#57b4fa}
+h1{font-size:clamp(42px,4.5vw,66px);font-weight:650;letter-spacing:-3.2px;line-height:1.08;margin:7px 0 6px;color:#f5f7fa}
+h1 span{color:#48aaff}
+.role{display:flex;align-items:center;gap:9px;font-size:clamp(17px,1.75vw,22px);line-height:1.4;color:#9cd6ff;font-weight:450}
+.about-text{max-width:410px;font-size:15px;line-height:1.55;color:#c2cad6;margin:13px 0 10px}
+.location{display:flex;align-items:center;gap:6px;font-size:12px;color:#a1afbf}
+.actions{display:flex;flex-wrap:wrap;gap:9px;margin-top:19px}
+.primary,.secondary,.text-link,.icon-link{display:inline-flex;align-items:center;justify-content:center;gap:8px}
+.primary,.secondary{font-size:13px;line-height:1.35;font-weight:550;padding:9px 14px;border-radius:3px;border:1px solid #3d4b5d}
+.primary{background:#127cca;border-color:#3f9dde;color:white}
+.primary:hover{background:#198bdc}
+.secondary{background:#25303d;color:#e1e9ef}
+.secondary:hover,.quick-links>*:hover,.explorer-grid button:hover,.skills-grid section:hover{background:#2b3746;border-color:#576b80}
+.hero-photo{position:relative;width:100%;height:clamp(190px,16vw,235px);border-radius:4px;overflow:hidden;border:1px solid #5c6a80;background:#232434}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center 32%;transition:transform .35s}
+.hero-photo:hover img{transform:scale(1.035)}
+.photo-caption{position:absolute;bottom:0;left:0;right:0;display:flex;align-items:center;gap:7px;text-align:left;padding:21px 10px 9px;background:linear-gradient(transparent,#0c111de8);font-size:10px;color:#e2e5ec;letter-spacing:.35px}
+.quick-heading{display:flex;align-items:center;gap:12px;margin:23px 0 10px}
+.quick-heading h2{font-size:10px;letter-spacing:1.7px;text-transform:uppercase;color:#9baaba}
+.quick-heading span{height:1px;background:#34404b;flex:1}
+.quick-links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
+.quick-links>*{min-width:0;display:flex;align-items:center;gap:11px;padding:10px 12px;border:1px solid #35414e;border-radius:4px;background:#1c2530;text-align:left}
+.quick-links img{width:30px;height:30px;object-fit:contain}
+.quick-links strong,.quick-links small,.start-profile small,.contact-row small,.project-list small,.doc-row small{display:block}
+.quick-links strong{font-size:13px;font-weight:550}
+.quick-links small{font-size:11px;color:#a3afbf;margin-top:1px}
+.git-icon{color:#dce6f0}.external{margin-left:auto;color:#8f9caf;align-self:flex-start}
+.statusbar{min-height:25px;display:flex;align-items:center;justify-content:space-between;gap:8px;padding:0 13px;background:#1a232d;border-top:1px solid #2e3946;font-size:10.5px;color:#9daebb;letter-spacing:.15px}
+.statusbar span:first-child{display:flex;align-items:center;gap:7px}.statusbar i{width:6px;height:6px;border-radius:50%;background:#77c99c}
+.taskbar{position:absolute;z-index:250;bottom:0;left:0;right:0;height:48px;display:flex;align-items:stretch;background:#101820f2;backdrop-filter:blur(17px);border-top:1px solid #829fb535;color:white}
+.start-button{width:51px;display:grid;place-items:center;flex:none}
+.windows-mark{width:20px;height:19px;display:grid;grid-template-columns:44% 1fr;grid-template-rows:1fr 1fr;gap:1.5px;transform:perspective(45px) rotateY(-15deg)}
+.windows-mark i{background:currentColor}
+.task-search{height:100%;width:218px;background:#e9ebed;color:#252a2e;display:flex;align-items:center;gap:10px;padding:0 13px}
+.task-search input,.mobile-search input{min-width:0;width:100%;background:transparent;font-size:13px;outline:none}
+.task-search input::placeholder{color:#54585e}
+.task-apps,.tray,.tray-indicators{display:flex;align-items:stretch}.task-apps{min-width:0;overflow-x:auto;scrollbar-width:none}
+.task-app{display:grid;place-items:center;width:48px;position:relative;flex:none}
+.task-app .app-icon,.task-app .terminal-icon{width:25px;height:25px;object-fit:contain}
+.task-app.running:after{content:'';position:absolute;bottom:1px;height:2px;left:6px;right:6px;background:#70baff}
+.taskbar button:hover,.taskbar .active{background:#ffffff18}
+.tray{margin-left:auto;align-items:center;flex:none}
+.tray-indicators{gap:10px;align-items:center;margin:0 9px;color:#d9e2ea}
+.language{font-size:11px;margin:0 7px}
+.task-clock,.guide-button{height:100%;padding:0 9px;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.task-clock{font-size:11px;line-height:1.45}
+.show-desktop{height:100%;width:7px;border-left:1px solid #75818b}
+.popup{position:absolute;bottom:48px;z-index:220;color:#f5f6f8;background:#1a242ffb;backdrop-filter:blur(15px);border:1px solid #42505f;box-shadow:0 -6px 34px #0006;max-height:calc(100% - 55px);overflow:auto}
+.dismiss{position:absolute;inset:0;z-index:210;cursor:default}
+.start-menu{left:0;width:min(350px,100%);padding:21px}
+.start-profile{display:flex;align-items:center;gap:12px;padding-bottom:14px;border-bottom:1px solid #ffffff24}
+.start-profile img{width:43px;height:43px;border-radius:50%;object-fit:cover}
+.start-profile small,.start-menu p,.guide small,.muted,.page-content small{color:#a6b5c4}
+.start-menu h2,.guide h2{font-weight:600;font-size:17px;margin:15px 0 10px}
+.start-list button{width:100%;text-align:left;display:flex;gap:13px;align-items:center;padding:7px;font-size:14px}
+.start-list button:hover,.viewer-tools button:hover{background:#ffffff15}
+.start-list .app-icon,.start-list .terminal-icon{width:25px;height:25px;object-fit:contain}
+.mobile-search{display:none}
+.tray-popup{right:7px;width:min(320px,100%);padding:17px}
+.menu-heading,.viewer-tools{display:flex;align-items:center;justify-content:space-between}
+.calendar button,.viewer-tools button{padding:6px}
+.calendar-grid{display:grid;grid-template-columns:repeat(7,1fr);text-align:center;gap:2px;font-size:14px}
+.calendar-grid>*{padding:6px 0}.calendar-grid b{font-size:12px;color:#a8bbcc}
+.today{background:#147cca}
+.guide p{display:flex;align-items:center;gap:10px;font-size:14px;color:#d0dbe5;margin:12px 0}.guide p svg{width:17px;flex:none}.guide small{font-size:12px}.guide a{text-decoration:underline}
+.page-content{padding:24px 30px 30px}
+.page-content h2{font-size:27px;font-weight:600;letter-spacing:-.8px;margin-bottom:18px}
+.page-content h3{font-size:17px;font-weight:600}
+.page-content small{font-size:12px}
+.filters{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:15px}
+.filters button,.skills-grid section span{font-size:12px;padding:4px 10px;border:1px solid #3b4a5b;border-radius:3px;background:#1e2936}
+.filters .active{background:#12436a;border-color:#4796d0;color:#bfe7ff}
+.project-list details{border-bottom:1px solid #33404e}
+.project-list summary{display:flex;gap:13px;align-items:center;list-style:none;padding:14px 3px;cursor:pointer}
+.project-list summary::-webkit-details-marker{display:none}
+.project-list summary:hover,.text-link,.project-detail a{color:#88caff}
+.project-list summary img{width:34px}.project-list summary>svg{margin-left:auto;flex:none}.project-list details[open] summary>svg{transform:rotate(90deg)}
+.project-list small{line-height:1.5}.project-detail{padding:0 9px 16px 50px;font-size:14px;color:#c6d1db}
+.project-detail p,.timeline p{line-height:1.6;margin:8px 0}
+.project-detail a{margin-top:12px;display:inline-flex;align-items:center;gap:5px}
+.timeline{border-left:1px solid #3d5a71;margin:5px 0 0 5px;padding-left:20px}
+.timeline article{position:relative;margin:0 0 24px}.timeline article:before{content:'';position:absolute;left:-25px;top:7px;width:8px;height:8px;background:#63baff;border-radius:50%}
+.timeline b,.timeline p,.text-link{font-size:14px}.timeline p{color:#c1cdd8}
+.skills-grid,.gallery,.explorer-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.skills-grid section,.explorer-grid button,.gallery button,.doc-row,.contact-row{background:#1c2632;border:1px solid #344251;border-radius:4px}
+.skills-grid section{padding:14px}.skills-grid h3{display:flex;align-items:center;gap:8px;font-size:14px;color:#9cd8ff;margin-bottom:11px}
+.doc-row,.contact-row{display:flex;align-items:center;gap:12px;padding:14px;margin:10px 0}
+.doc-row img{width:36px}.doc-row .secondary,.contact-row>svg:last-child,.contact-row button{margin-left:auto}
+.icon-link{padding:8px;border-radius:3px;color:#a1d6fb}.icon-link:hover{background:#344253}
+.gallery button{overflow:hidden;text-align:left}.gallery button img{width:100%;height:155px;object-fit:cover;object-position:center 25%}
+.gallery button span{display:block;padding:8px 12px;font-size:13px}
+.viewer>img{max-width:100%;height:clamp(180px,40vh,520px);object-fit:contain;margin:8px auto}
+.viewer-tools button{display:flex;align-items:center;gap:8px}.viewer-tools{font-size:13px;color:#bbcbd9}
+.contact-row>svg:first-child{color:#83c9ff;flex:none}.contact-row a:hover,.contact-row:hover strong{text-decoration:underline}
+.explorer-grid button{display:flex;align-items:center;gap:10px;padding:14px}.explorer-grid img{width:40px}
+.empty-bin{min-height:240px;display:grid;align-content:center;justify-items:center;gap:14px;color:#a1b1c1}
+@media(min-width:1600px){.desktop-window{width:900px;height:560px}.utility-window{width:740px;height:500px}.overview{padding:32px 42px}.hero-photo{height:252px}.quick-heading{margin-top:28px}}
+@media(max-width:1080px){.desktop-window{left:52%;width:calc(100vw - 185px)}.desktop-clock{top:2%;right:3%}.overview{padding:22px 25px}.intro{gap:20px}.shortcuts{left:4px}.utility-window{width:min(660px,calc(100vw - 150px))}}
+@media(max-width:720px){.desktop-space{bottom:46px}.desktop-clock{top:10px;right:14px}.desktop-clock>div{font-size:27px;letter-spacing:-1px}.desktop-clock small{font-size:10px}.desktop-clock>span{font-size:10px}.shortcuts{top:10px;left:5px;gap:0}.shortcut{width:73px;height:72px;font-size:12px}.shortcut .app-icon{width:35px;height:35px}.desktop-window,.utility-window{inset:70px 8px 8px;width:auto;height:auto;transform:none;translate:none!important}.desktop-window.maximized{inset:0;width:100%;height:100%}.titlebar{height:35px}.window-controls button{width:35px}.tabs{gap:0;padding:0 4px;justify-content:space-around}.tabs button{gap:4px;font-size:12px;padding:0 5px;height:39px}.tabs button svg{width:13px}.overview{padding:20px;justify-content:flex-start}.intro{grid-template-columns:minmax(0,1fr) 28%;gap:12px;align-items:start}.hero-photo{height:auto;aspect-ratio:3/4}.photo-caption{display:none}h1{font-size:clamp(32px,7.5vw,47px);letter-spacing:-1.8px}.role{font-size:15px;gap:4px}.role svg{width:16px}.bio{display:contents}.greeting,h1,.role{grid-column:1}.greeting{align-self:end;font-size:10px}.intro{grid-template-rows:auto auto auto auto;row-gap:2px}.hero-photo{grid-column:2;grid-row:1/4;align-self:center}.about-text,.location,.actions{grid-column:1/-1}.about-text{font-size:14px;margin:13px 0 9px;max-width:none}.actions{margin-top:12px}.quick-heading{margin:20px 0 9px}.quick-links{gap:6px}.quick-links>*{flex-direction:column;align-items:start;gap:5px;padding:8px}.quick-links strong{font-size:12px}.quick-links small{font-size:10px}.external{display:none}.taskbar{height:46px}.start-button{width:43px}.task-search{display:none}.task-app{width:38px}.language,.tray-indicators{display:none}.popup{bottom:46px}.task-clock{font-size:10px;padding:0 6px}.guide-button{padding:0 6px}.mobile-search{display:flex;align-items:center;gap:8px;margin-top:13px;padding:8px;background:#101922;border:1px solid #425369}.page-content{padding:18px}.skills-grid{grid-template-columns:1fr}.doc-row{gap:7px;padding:9px}.doc-row img{width:26px}.doc-row h3{font-size:15px}.statusbar{font-size:9px}.contact-row{font-size:14px}.gallery button img{height:125px}}
+@media(max-height:620px) and (min-width:721px){.desktop-window{height:calc(100% - 22px);top:50%}.shortcuts{gap:0}.shortcut{height:64px}.shortcut .app-icon{height:34px;width:34px}.overview{padding:15px 25px}.desktop-clock{font-size:24px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}

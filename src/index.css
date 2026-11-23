@@ -1,0 +1,16 @@
+﻿@import "tailwindcss";
+
+:root{font-family:"Segoe UI",Arial,sans-serif;color:#f0f3f8;background:#041221;font-synthesis:none;-webkit-font-smoothing:antialiased;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0}
+button,a,input{font:inherit}
+button,a{touch-action:manipulation}
+button{cursor:pointer}
+button:focus-visible,a:focus-visible,input:focus-visible,summary:focus-visible{outline:2px solid #65c5ff;outline-offset:-2px}
+button:disabled{cursor:default}
+a{color:inherit;text-decoration:none}
+button{color:inherit}
+button,summary,a{-webkit-tap-highlight-color:transparent}
+button[hidden],section[hidden]{display:none}
+::selection{background:#0078d4;color:white}
+*{scrollbar-width:thin;scrollbar-color:#455466 #171e29}

@@ -1,0 +1,62 @@
+﻿.desktop{--gold:#e7c67f;--line:#ffffff22;--panel:#242428;--muted:#bebcba;background:#090909 url('/windows-11-50th.jpg') center/cover no-repeat}
+.desktop-space{bottom:54px;isolation:isolate}
+.workspace-header{position:absolute;left:26px;top:21px;display:flex;align-items:center;gap:13px;color:#e8e6e1}
+.workspace-brand{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:550}
+.workspace-brand .windows-mark{width:14px;height:14px;color:var(--gold)}
+.workspace-header button{border-left:1px solid #ffffff30;padding-left:11px;display:grid;place-items:center;color:#b5b2af}
+.windows-mark{transform:none;grid-template-columns:1fr 1fr;gap:2px}
+.desktop-clock{top:23px;right:30px;color:#eeeae2}.desktop-clock>div{font-size:33px;letter-spacing:-1.4px}.desktop-clock small{font-size:10px}.desktop-clock>span{font-size:12px;color:#c6c2b9}
+.desktop-intro{position:absolute;left:clamp(120px,15.5vw,310px);top:48%;transform:translateY(-50%);color:#f3f0e9;max-width:calc(100% - 155px);text-shadow:0 2px 22px #000d;pointer-events:none}
+.desktop-intro .owner{display:flex;align-items:center;gap:12px;font-size:12px;color:#efd89e;font-weight:600;letter-spacing:1.6px;text-transform:uppercase}
+.owner img{width:44px;height:44px;object-fit:cover;border-radius:50%;border:1px solid #d3b57a99}
+.desktop-intro h1{margin:14px 0 12px;font-size:clamp(65px,7.7vw,120px);line-height:.99;letter-spacing:-.065em;font-weight:580;color:#faf9f5}
+.desktop-intro h1 em{font-family:Georgia,"Times New Roman",serif;font-weight:400;letter-spacing:-.075em;color:var(--gold)}
+.desktop-intro p{font-size:clamp(15px,1.4vw,20px);color:#e6e4df;line-height:1.4}
+.home-location{display:flex;align-items:center;gap:6px;font-size:13px;color:#c9c6bd;margin:10px 0 25px}
+.home-actions{display:flex;flex-wrap:wrap;gap:9px}.home-actions button{display:flex;align-items:center;justify-content:center;gap:8px;font-size:13px;font-weight:600;padding:11px 17px;border:1px solid #ffffff39;border-radius:6px;background:#272726cd;backdrop-filter:blur(14px);pointer-events:auto}
+.home-actions button:first-child,.primary,.primary:hover{background:var(--gold);border-color:#e8d3a0;color:#231c12}
+.home-actions button:hover{filter:brightness(1.13)}
+.desktop-files{display:contents}.desktop-files .shortcut{position:absolute;z-index:2;width:83px;height:74px;padding:3px;border-radius:5px;gap:4px;font-size:12px;color:white;text-shadow:0 1px 4px #000,0 0 3px #000;user-select:none}
+.shortcut>span:last-child{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.shortcut.cut{opacity:.5}
+.shortcut .app-icon,.shortcut .drawn-icon{width:36px;height:36px}.shortcut.small{height:60px}.shortcut.small .app-icon,.shortcut.small .drawn-icon{width:27px;height:27px}
+.drawn-icon{display:inline-grid;place-items:center;aspect-ratio:1;flex:none;width:28px;color:white;border-radius:6px;box-shadow:inset 0 1px 1px #ffffff55,0 2px 5px #0004;background:linear-gradient(135deg,#609beb,#225895)}
+.drawn-icon svg{width:68%;height:68%;stroke-width:1.8}.icon-cmd{background:linear-gradient(150deg,#43474b,#141519);border:1px solid #9d9d9d}.icon-game{background:linear-gradient(150deg,#bb93e8,#7344ae)}.icon-note{background:linear-gradient(145deg,#cfeeff,#6d9fd5);color:#163c65}.icon-portfolio{background:linear-gradient(135deg,#e8c781,#997640);color:#26221b}
+.desktop-window{background:linear-gradient(130deg,#232428,#19191c);border-color:#ffffff38;border-radius:11px;box-shadow:0 25px 85px #0009,0 3px 14px #0008}
+.titlebar{height:40px;background:#242428;border-color:#ffffff12}.window-title .drawn-icon{width:18px;height:18px;border-radius:3px}
+.tabs,.statusbar{background:#222226;border-color:var(--line)}.tabs .selected,.greeting,.role,h1 span,.text-link,.project-detail a,.skills-grid h3{color:var(--gold)}.tabs .selected:after,.greeting span{background:var(--gold)}
+.overview{background:radial-gradient(ellipse at 90% 0%,#40372770,transparent 60%)}.quick-links>*,.secondary,.skills-grid section,.filters button,.doc-row,.contact-row,.gallery button{background:#303034;border-color:#ffffff20}.quick-links>*:hover,.secondary:hover{background:#403d38}.filters .active{background:#544830;color:#ffe4ac;border-color:#ad9463}
+.quick-heading span{background:var(--line)}.statusbar{color:#bcbab6}.statusbar i{background:#d5b97a}
+.window-controls .close{border-radius:0 9px 0 0}.maximized .close{border-radius:0}
+.taskbar{height:54px;align-items:center;justify-content:center;background:#1e1e20d9;border-color:#ffffff26;backdrop-filter:blur(28px)}
+.task-center{display:flex;align-items:center;gap:5px;min-width:0;max-width:calc(100% - 310px)}
+.start-button,.task-app{width:42px;height:42px;border-radius:5px}.start-button .windows-mark{width:23px;height:23px;color:#52b9fb}
+.search-chip{color:#ddd;display:flex;align-items:center;gap:9px;padding:5px 13px;background:#ffffff13;border:1px solid #ffffff20;border-radius:20px;width:104px;font-size:13px;height:32px}
+.task-app .drawn-icon{width:24px}.task-app.running:after{width:6px;height:3px;border-radius:5px;bottom:1px;left:calc(50% - 3px)}.task-app.active:after{width:15px;left:calc(50% - 7.5px);background:var(--gold)}
+.tray{position:absolute;right:0;height:100%}.task-clock{font-size:11px}.tray-indicators{color:#e8e8e8}
+.popup,.context-menu,.file-dialog{background:linear-gradient(125deg,#353330f5,#282729f5 75%);border:1px solid #ffffff29;box-shadow:0 18px 54px #0008;backdrop-filter:blur(30px);border-radius:10px}
+.popup{bottom:62px;max-height:calc(100% - 76px)}
+.start-menu{left:50%;transform:translateX(-50%);width:min(550px,calc(100% - 16px));padding:24px 28px 0}
+.start-search{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-bottom:2px solid #c3a86e;border-radius:20px;background:#19191bbf;padding:8px 14px;color:#dac391}
+.start-search input{outline:none;background:transparent;color:white;width:100%;font-size:14px}
+.start-menu h2{font-size:14px;margin:20px 0 10px}.start-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px}
+.start-grid button{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;padding:9px 3px;font-size:12px;border-radius:5px}
+.start-grid .app-icon,.start-grid .drawn-icon{width:30px;height:30px;object-fit:contain}
+.start-grid button:hover,.recommended button:hover,.file-tools button:hover,.file-row:hover,.context-menu button:hover{background:#ffffff12}
+.recommended{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px;max-height:145px;overflow:auto}
+.recommended button{display:flex;align-items:center;gap:8px;text-align:left;padding:6px;font-size:13px;border-radius:5px;overflow-wrap:anywhere}.recommended .app-icon,.recommended .drawn-icon{width:23px;height:23px}
+.start-profile{border:0;border-top:1px solid var(--line);padding:13px 26px;margin:16px -28px 0;background:#17171961;font-size:13px}.start-profile img{width:30px;height:30px}.start-profile button{margin-left:auto;padding:6px}
+.context-menu{position:absolute;z-index:225;padding:5px;width:220px;max-height:calc(100% - 12px);overflow:auto}
+.context-menu button,.file-tools button,.file-path button,.file-path span{display:flex;align-items:center;gap:10px}
+.context-menu button{font-size:14px;text-align:left;width:100%;padding:8px 10px;border-radius:5px}.context-menu svg,.file-tools svg{width:16px;height:16px}.context-menu hr{border-color:var(--line);margin:4px 0}
+.dialog-veil{position:absolute;inset:0;z-index:300;background:#08080880;display:grid;place-items:center}
+.file-dialog{padding:23px;width:min(340px,calc(100% - 20px))}.file-dialog h2{font-size:20px;font-weight:550;margin-bottom:14px;overflow-wrap:anywhere}.file-dialog label{display:grid;gap:6px;font-size:13px}.file-dialog input,.file-dialog select,.pdf-toolbar select{background:#202022;border:1px solid #ffffff31;border-radius:5px;padding:6px 9px;color:#f3f3f3}.file-dialog p{color:#ffc4a3;font-size:13px}
+.file-explorer{overflow:auto;flex:1;padding:0 15px 15px}.file-path,.file-tools,.file-row{display:flex;align-items:center;gap:8px}.file-path{border-bottom:1px solid var(--line);min-height:45px;flex-wrap:wrap;padding:6px 0;font-size:13px}.file-tools{margin:9px 0}.file-tools button{font-size:13px;padding:7px 10px;border-radius:4px}.file-row{padding:6px;border-bottom:1px solid #ffffff10;border-radius:4px}.file-row button{padding:4px}.file-open{display:flex;align-items:center;gap:10px;flex:1;min-width:0;text-align:left;font-size:14px}.file-open span:last-child{overflow-wrap:anywhere}.file-open .app-icon,.file-open .drawn-icon{width:26px;height:26px}.file-row small{color:#b4b4b4;font-size:12px}
+.desktop-toast{position:absolute;z-index:330;bottom:62px;right:10px;padding:9px 15px;background:#343334;border:1px solid var(--line);border-radius:7px;font-size:13px}
+.cmd-screen,.notepad{background:#101011;flex:1;min-height:0;overflow:auto;padding:13px;color:#eee;font:14px/1.55 Consolas,monospace}
+.cmd-screen pre{white-space:pre-wrap;overflow-wrap:anywhere;font:inherit}.cmd-screen label{display:flex;align-items:baseline;gap:1px;flex-wrap:wrap;overflow-wrap:anywhere}.cmd-screen input{flex:1;min-width:70px;background:none;outline:none}.cmd-screen b{color:#efd28e}.notepad{resize:none}
+.pdf-reader{display:flex;flex-direction:column;min-height:0;flex:1}.pdf-toolbar{display:flex;align-items:center;flex-wrap:wrap;gap:8px;background:#2e2e31;padding:7px 12px;font-size:12px}.pdf-toolbar>div{display:flex;align-items:center}.pdf-toolbar button,.pdf-toolbar a{padding:5px}.pdf-toolbar button:hover{background:#ffffff16}.pdf-toolbar button svg{width:16px;height:16px}button:disabled{opacity:.45}.pdf-toolbar a{margin-left:auto}
+.pdf-area{flex:1;min-height:0;overflow:auto;padding:12px;background:#49494c}.pdf-area canvas{display:block;margin:0 auto;background:#fff;max-width:none;box-shadow:0 2px 12px #0005}.app-docs{height:min(720px,calc(100% - 32px));width:min(780px,calc(100vw - 160px))}
+.app-game{width:min(400px,96vw);height:min(500px,calc(100% - 24px))}.mine-game{max-width:340px;margin:0 auto;padding:18px}.mine-head,.mine-tools,.mine-tools span,.mine-tools button{display:flex;align-items:center;gap:8px}.mine-head,.mine-tools{justify-content:space-between}.mine-head small{font-size:12px;color:var(--gold)}.mine-head h2{font-size:26px;font-weight:550}.mine-head button,.mine-tools button{padding:6px;border:1px solid var(--line);border-radius:4px}
+.mine-tools{font-size:12px;margin:12px 0}.mine-tools [aria-pressed=true]{background:#725c31}.mine-board{display:grid;grid-template-columns:repeat(8,1fr);gap:3px}.mine-board button{aspect-ratio:1;display:grid;place-items:center;background:#424246;border-radius:4px;border:1px solid #ffffff24;font-size:15px;font-weight:650}.mine-board button:hover{background:#505055}.mine-board .revealed{background:#252528;color:#e7c988}.mine-board .n1{color:#99cfff}.mine-board .n2{color:#a4d9b1}.mine-board .exploded{background:#883e43}.mine-game>p{font-size:12px;color:#c5c2bd;margin-top:10px}
+@media(max-width:720px){.desktop-space{bottom:49px}.desktop{background-position:58% center}.desktop-intro{left:103px;max-width:calc(100% - 117px);top:43%}.desktop-intro h1{font-size:clamp(48px,10vw,72px);line-height:1.03}.desktop-intro .owner{font-size:10px;gap:7px;letter-spacing:1px}.owner img{width:32px;height:32px}.home-location{margin:9px 0 16px}.home-actions button{font-size:12px;padding:8px 10px}.workspace-header{left:14px;top:16px}.desktop-clock{right:12px;top:12px}.desktop-clock>div{font-size:24px}.desktop-clock>span{font-size:10px}.desktop-window,.app-docs,.app-game{inset:55px 6px 6px;width:auto;height:auto}.taskbar{height:49px}.task-center{margin-right:auto;max-width:calc(100% - 68px);gap:2px}.start-button,.task-app{width:34px;height:38px}.search-chip{width:31px;height:31px;justify-content:center;padding:0}.search-chip span,.guide-button,.tray-indicators{display:none}.task-clock{padding:0 4px;font-size:9px}.popup{bottom:56px}.start-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.start-menu{padding:16px 16px 0}.start-profile{margin:15px -16px 0}.file-row small{display:none}.desktop-toast{left:8px;right:8px}.pdf-toolbar{gap:3px;padding:5px}.pdf-toolbar select{max-width:140px}.start-menu h2{margin-top:12px}}
+@media(max-height:520px){.desktop-intro{left:32%}.owner img{width:26px;height:26px}.desktop-intro h1{font-size:52px}.desktop-intro .home-location{margin:4px 0 8px}.desktop-intro{top:53%}.start-menu{max-height:calc(100% - 65px)}}
